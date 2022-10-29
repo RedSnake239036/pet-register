@@ -88,5 +88,22 @@ namespace pet_register
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form2 report = new Form2();
+            report.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            PetOwners owners = new PetOwners();
+            owners.Show();
+        }
+
+        private void Register_Details_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
