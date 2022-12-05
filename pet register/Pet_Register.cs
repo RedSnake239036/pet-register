@@ -15,10 +15,14 @@ namespace pet_register
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void OpenRecord(object sender, DataGridViewCellEventArgs e)
         {
             Register_Details register_details = new Register_Details();
             register_details.Show();
+        }
+        public static cardData[] GetList()
+        {
+            return new cardData[] {new cardData(cardData.Status.card_empty) };
         }
     }
 }
